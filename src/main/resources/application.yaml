@@ -1,10 +1,15 @@
 
 
+spring:
+  jackson:
+    default-property-inclusion: non_null
+
 
 
 #management:
 #  info:
 #    git:
 #      mode: full
+
 
 
