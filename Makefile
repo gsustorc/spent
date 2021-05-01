@@ -1,6 +1,9 @@
 dev-start:
-	./gradlew clean bootRun
+	./gradlew clean goJF bootRun
 
 build:
-	./gradlew clean build
+	./gradlew clean goJF build
+
+format:
+	./gradlew goJF
 

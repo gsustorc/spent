@@ -4,6 +4,7 @@ plugins {
 	id "io.freefair.lombok" version "6.0.0-m2"
 	id 'java'
 	id "com.gorylenko.gradle-git-properties" version "2.3.1-rc2"
+	id 'com.github.sherter.google-java-format' version '0.9'
 }
 
 gitProperties {
@@ -39,11 +40,14 @@ dependencies {
 	}
 
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
 
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation "org.springframework.boot:spring-boot-starter-jetty"
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+	implementation ('org.springframework.boot:spring-boot-starter-data-mongodb')
 
 	// annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	// implementation 'org.springframework.boot:spring-boot-starter-cache'
